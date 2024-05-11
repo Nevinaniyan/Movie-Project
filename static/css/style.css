@@ -1,0 +1,88 @@
+body
+{
+background-color:#C6DCBA;
+}
+
+.card1
+{
+width:300px;
+}
+
+.card2
+{
+width:524px;
+}
+
+.card3
+{
+height:1050px;
+}
+
+.margin1
+{
+margin-left:400px;
+}
+
+.feb
+{
+text-align:center;
+color:white;
+-webkit-text-stroke: 1.2px black;
+}
+
+.navbar-brand
+{
+font-weight:bolder;
+font-family:fantasy;
+color:black;
+-webkit-text-stroke: 0.5px white;
+font-size:40px;
+}
+
+.imgsize
+{
+height:420.68px;
+width:298.4px;
+}
+
+.imgsize1
+{
+height:720.68px;
+width:498.4px;
+}
+
+.button_fix
+{
+/*margin-left:80px;
+background-color:transparent;        for button in home.html
+border:none;
+*/
+position: absolute;
+    /*if we dont use card-footer class we can give position absolute for the button and position relative for the card class.*/
+left: 30%;
+bottom:10px;
+background-color:transparent;
+border:none;
+}
+
+.button_edit
+{
+position:absolute;
+top:730px;
+left:65%;
+}
+
+.button_edit1
+{
+position:absolute;
+top:730px;
+left:80%;
+}
+
+.detail-name
+{
+margin-left: 40%;
+color: white;
+font-weight: bolder;
+-webkit-text-stroke: black 1px;
+}

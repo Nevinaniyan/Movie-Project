@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block title %}
+    Details
+    {% endblock %}
+
+
+{% block details %}
+<div class="container my-4">
+    <div class="container">
+        <h1 class="detail-name">{{details.name}}</h1>
+    </div>
+    <div class="row margin1">
+            <div class="col-lg-3 card2">
+                <div class="card card3  mb-4">
+                    <img src="{{ details.image.url }}" class="card-img-top imgsize1" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ details.name }}</h5>
+                        <p class="card-text">{{ details.year }}</p>
+                        <p class="card-text">{{ details.desc }}</p>
+                    </div>
+                    <div>
+                        <a href="{% url 'movies:edit' details.id %}" class="btn btn-danger button_edit">Edit</a><br>
+                        <a href="{% url 'movies:delete' details.id %}" class="btn btn-danger button_edit1">Delete</a>
+{# If you're iterating over a queryset or list and using a loop variable like {% for i in m %}, #}
+{# you would use i.id to access the id attribute of each object in the loop. #}
+{# If details represents a single movie object, you would use details.id to access its id attribute directly. #}
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+{% endblock %}
+

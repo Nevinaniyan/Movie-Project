@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+EditPage
+{% endblock %}
+
+{% block edit %}
+
+<h1>This is the Page to Edit the Movie Details</h1>
+
+<form method="POST" enctype="multipart/form-data">
+
+    {% csrf_token %}
+
+    {{ form|crispy }}        <!-- using crispy yo add styling to inbuilt forms -->
+    <input type="submit">
+</form>
+
+{% endblock %}
